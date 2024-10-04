@@ -1,5 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
+// Luego, usa <Router> en lugar de <BrowserRouter>
+
 import CesarCipher from './components/CesarCipher';
 import EscitalaCipher from './components/EscitalaCipher';
 import BlowfishCipher from './components/BlowfishCipher';

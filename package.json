@@ -2,7 +2,7 @@
   "name": "cifrados-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jesuseduardo-09-29-04.github.io/cifradosFrame/",
+  "homepage": "https://jesuseduardo-09-29-04.github.io/cifradosFrame",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
