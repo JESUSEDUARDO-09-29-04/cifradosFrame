@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cifradosFrame/static/css/main.3e5e3c44.css",
+    "main.js": "/cifradosFrame/static/js/main.79d15106.js",
+    "index.html": "/cifradosFrame/index.html",
+    "main.3e5e3c44.css.map": "/cifradosFrame/static/css/main.3e5e3c44.css.map",
+    "main.79d15106.js.map": "/cifradosFrame/static/js/main.79d15106.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3e5e3c44.css",
+    "static/js/main.79d15106.js"
+  ]
+}
