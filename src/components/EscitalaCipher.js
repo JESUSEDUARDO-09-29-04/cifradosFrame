@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from './cesar.css'; // Importa los estilos del CSS Module
+import './escitala.css'; // Importa los estilos del CSS
 
 const EscitalaCipher = () => {
   const [mensaje, setMensaje] = useState('');
@@ -101,9 +101,9 @@ const EscitalaCipher = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <h2>Cifrado Escítala</h2>
-      <div className={styles['form-container']}>
+      <div className="form-container">
         <label htmlFor="mensaje">Mensaje a cifrar/descifrar:</label>
         <input
           type="text"
@@ -122,25 +122,27 @@ const EscitalaCipher = () => {
           placeholder="Número de columnas"
         />
 
-        <div className={styles.buttons}>
+        <div className="buttons">
           <button id="cifrar" onClick={cifrarEscitala}>Cifrar</button>
           <button id="descifrar" onClick={descifrarEscitala}>Descifrar</button>
         </div>
 
-        <div id="resultado-container" className={styles['resultado-container']}>
+        <div id="resultado-container" className="resultado-container">
           <strong>Resultado:</strong>
           <textarea readOnly value={resultado} />
           <button onClick={copiarTexto}>Copiar</button>
         </div>
 
-        <div id="matriz-container" className={styles['matriz-container']}>
+        <div id="matriz-container" className="matriz-container">
           <h3>Matriz generada:</h3>
-          <table>
+          <table className="matrix-table">
             <tbody>
               {matriz.map((fila, rowIndex) => (
                 <tr key={rowIndex}>
                   {fila.map((columna, colIndex) => (
-                    <td key={colIndex}>{columna || ' '}</td>
+                    <td key={colIndex} className="matrix-cell">
+                      {columna || ' '} {/* Si la celda está vacía, muestra un espacio en blanco */}
+                    </td>
                   ))}
                 </tr>
               ))}
@@ -148,18 +150,18 @@ const EscitalaCipher = () => {
           </table>
         </div>
 
-        <button className={styles['menu-button']} onClick={() => window.location.href = '/'}>
+        <button className="menu-button" onClick={() => window.location.href = '/'}>
           Regresar al Menú
         </button>
 
         {/* Botón de ayuda con el signo de interrogación */}
-        <button className={styles['help-button']} onClick={mostrarInstrucciones}>❓</button>
+        <button className="help-button" onClick={mostrarInstrucciones}>❓</button>
 
         {/* Modal de instrucciones */}
         {showInstructions && (
-          <div className={styles.modal}>
-            <div className={styles['modal-content']}>
-              <span className={styles.close} onClick={ocultarInstrucciones}>&times;</span>
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={ocultarInstrucciones}>&times;</span>
               <h3>Instrucciones</h3>
               <p>
                 1. Ingresa el mensaje que deseas cifrar o descifrar.<br />

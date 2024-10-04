@@ -9,6 +9,10 @@ import BlowfishCipher from './components/BlowfishCipher';
 import ElGamalCipher from './components/ElGamalCipher';
 import SHA3Cipher from './components/SHA3Cipher';
 import Home from './components/Home';
+import CiphersInfo from './components/CiphersInfo';  // Importa el nuevo componente
+import AuthorInfo from './components/AutorInfo';
+
+
 
 const App = () => {
   return (
@@ -20,6 +24,8 @@ const App = () => {
         <Route path="/blowfish" element={<BlowfishCipher />} />
         <Route path="/elgamal" element={<ElGamalCipher />} />
         <Route path="/sha3" element={<SHA3Cipher />} />
+        <Route path="/info-cifrados" element={<CiphersInfo />} /> {/* Nueva ruta */}
+        <Route path="/author-info" element={<AuthorInfo />} />
       </Routes>
     </Router>
   );

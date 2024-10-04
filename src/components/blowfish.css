@@ -1,0 +1,120 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .section-container {
+    display: flex;
+    flex-wrap: wrap; /* Para que se acomode en pantallas pequeñas */
+    gap: 20px;
+  }
+  
+  .form-section, .ciphered-section, .decrypted-section {
+    flex: 1;
+    min-width: 300px;
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Añadir margen inferior para separación vertical */
+  }
+  
+  .form-section h3, .ciphered-section h3, .decrypted-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .form-section label, .ciphered-section p, .decrypted-section p {
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .cipher-button, .decipher-button, .menu-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .cipher-button:hover, .decipher-button:hover, .menu-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .help-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .help-button:hover {
+    background-color: #ffffff;
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    text-align: center;
+  }
+  
+  .close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: #888;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  .menu-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ciphered-section p {
+    word-break: break-all; /* Ajusta las palabras largas dentro del contenedor */
+  }
+  
+  @media (max-width: 768px) {
+    .section-container {
+      flex-direction: column;
+    }
+  }
+  
